@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФОРМЫ</title>
+</head>
+<body>
+   <h1>формы</h1> 
+   <form>
+    <div>
+        <label for="text">текст</label>
+    <input type="text" id="text"> 
+    </div>
+    <div>
+        <label for="email">почта</label>
+    <input type="email" id="email"> 
+    </div>  
+    <div>
+        <label for="password">пароль</label>
+    <input type="password" id="password" placeholder="email"> 
+    </div>
+    <div>
+        <label for="number">число</label>
+    <input type="number" id="number" value="01.01.2025"> 
+    </div>
+    <div>
+        <label for="range">range</label>
+    <input type="range" id="range"> 
+    </div>
+    <div>
+        <label for="data">дата</label>
+    <input type="data" id="data"> 
+    </div>
+    <div>
+        <label for="color">цвет</label>
+    <input type="color" id="color"> 
+    </div>
+    <div>
+        <label for="message">сообщение</label>
+        <br>
+    <textarea id="message" cols="25" rows="5"></textarea>
+    </div>
+    <div>
+        <label for="sex">ваш пол</label>
+    <select id="sex">
+        <option value="male">мужчина</option>
+        <option value="female" selected>женщина</option>
+        <option value="other">другое</option>
+    </select>
+    </div>
+    <div>
+        <label>количество работ</label>
+        <input type="radio" name="work">1
+        <input type="radio" name="work">2
+        <input type="radio" name="work">5
+        <input type="radio" name="work">10+
+    </div>
+    <div>
+        <label>любимая еда</label>
+        <input type="checkbox" name="food">картошка
+        <input type="checkbox" name="food">морковка
+        <input type="checkbox" name="food">конфеты
+        <input type="checkbox" name="food">хлеб
+    </div>
+    <button type="submit">отправить форму</button>
+   </form>
+</body>
+</html>

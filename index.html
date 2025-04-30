@@ -7,70 +7,85 @@
     <meta name="keywords" content="html, css, course, it"> 
     <meta name="discription" content="попробуй себя в программировании">
     <title> html course </title> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="imgs/я.png" width="250" alt="здесь моя фотокарточка">
-    <h1> NINA POTEMCKINA <hr color="brown" > </h1>
-<p><strong><em>в прошлую пятницу мне исполнилось 22 года</em></strong></p>
-<p><strong>я родилась и живу в санкт-петербурге.</strong></p> 
-<p>люблю кофе, пешие прогулки и смеяться</p>
-<br>
-<h2><p><strong>МОИ СОЦИАЛЬНЫЕ СЕТИ</strong></p></h2>
-<a href="https://www.instagram.com/potemckina_?igsh=OWpxZWhwNW5yMWx1&utm_source=qr" target="_blank"> instagram </a>
-<br>
-<a href=" https://t.me/p0temckina" target="_blank"> telegram channel </a> 
-<br>
-<br>
-<h2>МОИ ХОББИ</h2>
-<ol>
-    <li>пешие прогулки</li>
-    <li>занятия спортом</li>
-    <li>посещение новых мест</li>
-    <li>изучать и пробовать новое</li>
-</ol>
-<br>
-<h2>ОПЫТ РАБОТЫ</h2>
-    <table width="800">
-        <thead>
-            <tr>
-                <th>название</th>
-                <th>должность</th>
-                <th>год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ДЮЦ "Красногвардеец"</td>
-                <td>педагог дополнительного образования по шашкам</td>
-                <td>2021-по наст.время</td>
-            </tr>
-            <tr>
-                <td>Жилищный комитет</td>
-                <td>старший инженер ОМАФ</td>
-                <td>2024-по наст.время</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <br>
-    <h2>СВЯЗАТЬСЯ СО МНОЙ</h2>
-    <div>
-        <label for="text">ваше имя:</label>
-        <input type="text" id="text" placeholder="введите имя">
-    </div>
-    <br>
-    <div>
-        <label for="email">ваш email:</label>
-        <input type="email" id="email" placeholder="введите email">
-    </div>
-    <br>
-    <div>
-        <label for="message">ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="50" rows="15" placeholder="введите сообщение..."></textarea>
-    </div>
-    <div>
-        <button type="submit">отправить форму</button>
+    <div class="container">
+        <div class="info">
+            <img src="imgs/я.png" alt="здесь моя фотокарточка" class="avatar"> 
+            <div class="info-text">
+                <h1>NINA POTEMCKINA</h1>
+                <p><strong>я родилась и живу в санкт-петербурге.</strong></p> 
+                <p>люблю гулять, пить кофе и смеяться</p>
+                <hr color="black">
+            </div> 
+        </div>
+            <div class="bio">
+                <h2><strong>МОИ СОЦИАЛЬНЫЕ СЕТИ</strong></h2>
+                <a href="https://www.instagram.com/potemckina_?igsh=OWpxZWhwNW5yMWx1&utm_source=qr" target="_blank" alt="ссылка на инстаграм"> instagram </a>
+                <a href=" https://t.me/p0temckina" target="_blank" alt="ссылка на телеграм канал"> telegram channel </a>
+            </div>
+            <hr color="black"> 
+            <div class="card bg-yellow">
+                <ul class="list">
+                    <h2>мои хобби</h2>
+                    <ol>
+                        <li>пешие прогулки</li>
+                        <li>бег</li>
+                        <li>йога</li>
+                        <li>готовка</li>
+                    </ol>
+                </ul>
+            </div>
+            <hr color="black">
+            <div class="card bg-red">
+                    <h2>опыт работы</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>название</th>
+                                <th>должность</th>
+                                <th>год</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ДЮЦ "Красногвардеец"</td>
+                                <td>педагог дополнительного образования по шашкам</td>
+                                <td>2021-по наст.время</td>
+                            </tr>
+                            <tr>
+                                <td>Жилищный комитет</td>
+                                <td>старший инженер ОМАФ</td>
+                                <td>2024-по наст.время</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <hr color="black">
+            <form action="/" class="form">
+            <div class="card bg-green">
+                <h2>связаться со мной</h2></div>
+                    <div class="form-row">
+                        <div class="form-group">
+                                <label for="text">ваше имя:</label>
+                                <input type="text" id="text" placeholder="введите имя">
+                        </div>
+                        <div class="form-group">
+                                <label for="email">ваш email:</label>
+                                <input type="email" id="email" placeholder="введите email">
+                        </div>
+                    </div>
+                <div class="form-group">
+                        <label for="message">ваше сообщение:</label>
+                        <textarea id="message" cols="50" rows="15" placeholder="введите сообщение..."></textarea>
+                </div>
+                <div>
+                        <button type="submit" class="btn">отправить форму</button>                    
+                </div>
+            </div>
+            </form>
+       
     </div>
 </body>
 </html>
